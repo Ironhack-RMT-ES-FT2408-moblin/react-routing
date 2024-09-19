@@ -9,6 +9,7 @@ import { useState } from 'react'
 import Profile from './pages/Profile'
 import StudentList from './pages/StudentList'
 import UserData from './pages/UserData'
+import Navbar from "./components/Navbar"
 
 // App va a funcionar como un organizador de páginas
 function App() {
@@ -18,19 +19,7 @@ function App() {
   return (
     <>
 
-    <nav>
-      <Link to="/">Home</Link>
-      <br />
-      <Link to="/conocenos/equipo">Conocenos</Link>
-      <br />
-      <Link to="/conocenos/location">Location</Link>
-      <br />
-      <Link to="/profile">Mi perfil</Link>
-      <br />
-      <Link to="/all-users">Ver todos los usuarios</Link>
-
-      {/* EN REACT NUNCA DEBEMOS USAR etiquetas a para redirecciones o navegacion interna */}
-    </nav>
+    <Navbar />
     
     <Routes>
 
