@@ -25,7 +25,7 @@ function UserData() {
       
       <h3>Info de un usuario especifico</h3>
 
-      {userToDisplay === undefined ? (
+      {userToDisplay === undefined ? ( 
         <h2>No hay usuarios con ese nombre</h2>
       ) : (
       <div>
